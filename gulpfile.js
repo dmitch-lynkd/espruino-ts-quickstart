@@ -29,7 +29,7 @@ function prepare_for_espruino(cb) {
     }
 
     let appContent = fs.readFileSync(appFilePath).toString();
-    appContent = appContent.replace('Object.defineProperty(exports, "__esModule", { value: true });', "");
+    appContent = appContent.replace('Object.defineProperty(exports, "__esModule", { value: true });', "reset();");
     fs.writeFileSync(appFilePath, appContent);
 
     const buildproc = fork(
@@ -76,7 +76,7 @@ function clear_espruino_watch_file(cb) {
 function espruino_console(cb) {
     const buildproc = fork(
         require.resolve("espruino/bin/espruino-cli"),
-        ["--board", envConfig.board, "-b", envConfig.port_speed, "--port", envConfig.port, "-w", espConsoleBeingWatchedFileName],
+        ["--board", envConfig.board, "-b", envConfig.port_speed, "--port", envConfig.port, "-w", espConsoleBeingWatchedFileName, "-e", "save()"],
         { cwd: distDir });
     buildproc.on('close', () => {
         cb();
@@ -118,3 +118,8 @@ gulp.task("send-to-espruino-console", send_to_espruino_console);
 gulp.task("clear-espruino-watch-file", clear_espruino_watch_file);
 
 gulp.task("espruino-console", gulp.series("clear-espruino-watch-file", espruino_console));
+
+gulp.task(
+  "espruino-console",
+  gulp.series("clear-espruino-watch-file", espruino_console)
+);
