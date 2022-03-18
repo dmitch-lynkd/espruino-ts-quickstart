@@ -113,8 +113,8 @@ gulp.task("prepare-for-espruino", gulp.series('compile-ts', 'content-to-dist', p
 
 gulp.task("build", gulp.series("prepare-for-espruino"));
 
-gulp.task("send-to-espurino-console", send_to_espruino_console);
+gulp.task("send-to-espruino-console", send_to_espruino_console);
 
-gulp.task("clear-espurino-watch-file", clear_espruino_watch_file);
+gulp.task("clear-espruino-watch-file", clear_espruino_watch_file);
 
-gulp.task("espruino-console", gulp.series("clear-espurino-watch-file", espruino_console));
+gulp.task("espruino-console", gulp.series("clear-espruino-watch-file", espruino_console));
