@@ -25,10 +25,10 @@ Once you have completed the setup of your project directory:
 - run command `npm install`. This will install all require modules
 
 ## Project tasks (scripts)
-<p style="color:red">build:</span> compiles ts code to javascript and prepares it for espruino use<br />
-<span style="color:red">deploy:</span> combines the build and send-to-espruino-console tasks<br />
-<span style="color:red">espruino-console:</span> runs Espruino console (check\adjust env-config.yaml config file)<br />
-<span style="color:red">send-to-espruino-console:</span> uploads compiled code to board (run espruino console before using this command). Once you run this command then switch back to `espruino-console` view
+**build:** compiles ts code to javascript and prepares it for espruino use<br />
+**deploy:** combines the build and send-to-espruino-console tasks<br />
+**espruino-console:** runs Espruino console (check\adjust env-config.yaml config file)<br />
+**send-to-espruino-console:** uploads compiled code to board (run espruino console before using this command). Once you run this command then switch back to `espruino-console` view<br />
 
 ## espruino-cli
 ```bash
@@ -46,6 +46,6 @@ espruino -p your_port -w code.js
 ```
 
 ## More Information Links
-espruino-cli: https://github.com/espruino/EspruinoTools
-Espurino Pico: https://www.espruino.com/Pico
-Espurino Pico pinout: https://www.espruino.com/Pico#pinout
+espruino-cli: https://github.com/espruino/EspruinoTools<br />
+Espurino Pico: https://www.espruino.com/Pico<br />
+Espurino Pico pinout: https://www.espruino.com/Pico#pinout<br />
