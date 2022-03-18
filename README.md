@@ -9,7 +9,7 @@ This repo is meant to be used as a template for starting a new Espruino Typescri
 
 To use this repo:
 
-- git clone https://github.com/dmitch-lynkd/espruito-ts-quickstart.git
+- git clone https://github.com/dmitch-lynkd/espruino-ts-quickstart.git
 - rename the `espruito-ts-quickstart` directory to your desired project name
 - cd into the new project directory
 - delete the `.git` directory by executing the following: `rm -rf .git`
