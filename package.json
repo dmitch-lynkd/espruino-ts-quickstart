@@ -4,7 +4,7 @@
   "description": "Quickstart for Espruino using typescript and Visual Studio Code IDE",
   "main": "app.js",
   "repository": {
-    "url": "https://github.com/stasberkov/espruino-ts-quickstart"
+    "url": "https://github.com/dmitch-lynkd/espruino-ts-quickstart"
   },
   "scripts": {
     "build": "gulp build",
