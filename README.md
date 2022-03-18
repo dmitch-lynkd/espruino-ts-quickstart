@@ -1,7 +1,7 @@
 ![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.png?v=101) ![JavaScript](https://badges.frapsoft.com/javascript/code/javascript.png?v=101)
 # espruino-ts-quickstart
 
-Quickstart for Espruino using typescript and Visual Studio Code IDE
+Quickstart for Espruino using typescript and Visual Studio Code IDE<br />
 (adapted from https://www.espruino.com/Typescript+and+Visual+Studio+Code+IDE)
 
 ## How To Use This Repo
