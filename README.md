@@ -31,7 +31,7 @@ Once you have completed the setup of your project directory:
 **send-to-espruino-console:** uploads compiled code to board (run espruino console before using this command). Once you run this command then switch back to `espruino-console` view<br />
 
 ## Sending code to the Espruino
-The Gulp tasks expect the main source file to be `app.ts`. This should either have all of your code or import code from other source files. When ready to test the code on the Espruino, open the Espruino console:<br />
+The Gulp tasks expect the main source file to be `app.ts`. This should either have all of your code or it should import code from other source files. When ready to test the code on the Espruino, open the Espruino console:<br />
 &nbsp;&nbsp;&nbsp;&nbsp;```npm run espruino-console```<br />
 Next, compile the Typescript to Javascript and send the compiled code to the Espruino. Both can be done together in one step:<br />
 &nbsp;&nbsp;&nbsp;&nbsp;```npm run deploy```<br />
