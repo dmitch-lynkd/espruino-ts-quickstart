@@ -25,9 +25,9 @@ Once you have completed the setup of your project directory:
 - run command `npm install`. This will install all require modules
 
 ## Project tasks (scripts)
-build: compiles ts code to javascript and prepares it for espruino use
-deploy: combines the build and send-to-espruino-console tasks
-espruino-console: runs Espruino console (check\adjust env-config.yaml config file)
+build: compiles ts code to javascript and prepares it for espruino use<br />
+deploy: combines the build and send-to-espruino-console tasks<br />
+espruino-console: runs Espruino console (check\adjust env-config.yaml config file)<br />
 send-to-espruino-console: uploads compiled code to board (run espruino console before using this command). Once you run this command then switch back to `espruino-console` view
 
 ## espruino-cli
