@@ -2,6 +2,7 @@
 # espruino-ts-quickstart
 
 Quickstart for Espruino using typescript and Visual Studio Code IDE
+(adapted from https://www.espruino.com/Typescript+and+Visual+Studio+Code+IDE)
 
 ## How To Use This Repo
 
@@ -22,3 +23,27 @@ From here, you can create a repo on GitHub and push to that.
 Once you have completed the setup of your project directory:
 
 - run command `npm install`. This will install all require modules
+
+## Project tasks (scripts)
+build: compiles ts code to javascript and prepares it for espruino use
+deploy: combines the build and send-to-espruino-console tasks
+espruino-console: runs Espruino console (check\adjust env-config.yaml config file)
+send-to-espruino-console: uploads compiled code to board (run espruino console before using this command). Once you run this command then switch back to `espruino-console` view
+
+## espruino-cli
+```bash
+# List what ports are available
+espruino --list
+
+# Connect to Espruino and provide a REPL (Ctrl-C exits)
+espruino -p your_port
+
+# Connect to Espruino and upload a file
+espruino -p your_port code.js
+
+# Connect to Espruino, provide a REPL, and upload the file whenever it changes
+espruino -p your_port -w code.js
+```
+
+## More Information Links
+espruino-cli: https://github.com/espruino/EspruinoTools
