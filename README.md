@@ -49,3 +49,4 @@ espruino -p your_port -w code.js
 espruino-cli: https://github.com/espruino/EspruinoTools<br />
 Espurino Pico: https://www.espruino.com/Pico<br />
 Espurino Pico pinout: https://www.espruino.com/Pico#pinout<br />
+Espruino API Reference: https://www.espruino.com/Reference#software<br />
