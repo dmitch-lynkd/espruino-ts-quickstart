@@ -47,3 +47,5 @@ espruino -p your_port -w code.js
 
 ## More Information Links
 espruino-cli: https://github.com/espruino/EspruinoTools
+Espurino Pico: https://www.espruino.com/Pico
+Espurino Pico pinout: https://www.espruino.com/Pico#pinout
