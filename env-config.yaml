@@ -1,7 +1,8 @@
-# Port where mcu device is located
-port: COM4
+# serial (USB) port where mcu device is located
+port: /dev/tty.usbmodem00000000001A1
 
-# ESP32 after flash has 115200 speed.
-port_speed: 115200
+# baud rate of the serial connection. no effect when using USB, default: 9600
+port_speed: 9600
 
-board: ESP32
+# board type, which corresponds to a JSON file in http://www.espruino.com/json/
+board: PICO_R1_3
