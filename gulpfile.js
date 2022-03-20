@@ -34,10 +34,15 @@ function prepare_for_espruino(cb) {
   }
 
   let appContent = fs.readFileSync(appFilePath).toString();
-  appContent = appContent.replace(
-    'Object.defineProperty(exports, "__esModule", { value: true });',
-    "reset(true);"
-  );
+  appContent = appContent
+    .replace(
+      'Object.defineProperty(exports, "__esModule", { value: true });',
+      "reset(true);"
+    )
+    .replace(
+      '"use strict";\nObject.defineProperty(exports, "__esModule", { value: true });',
+      ""
+    );
   fs.writeFileSync(appFilePath, appContent);
 
   const buildproc = fork(
