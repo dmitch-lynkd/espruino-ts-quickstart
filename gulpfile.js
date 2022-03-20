@@ -39,8 +39,8 @@ function prepare_for_espruino(cb) {
       'Object.defineProperty(exports, "__esModule", { value: true });',
       "reset(true);"
     )
-    .replace(
-      '"use strict";\nObject.defineProperty(exports, "__esModule", { value: true });',
+    .replaceAll(
+      'Object.defineProperty(exports, "__esModule", { value: true });',
       ""
     );
   fs.writeFileSync(appFilePath, appContent);
