@@ -1,0 +1,40 @@
+// Pico Pins
+let A0: Pin;
+let A1: Pin;
+let A2: Pin;
+let A3: Pin;
+let A4: Pin;
+let A5: Pin;
+let A6: Pin;
+let A7: Pin;
+let A8: Pin;
+let A9: Pin;
+let A10: Pin;
+let A11: Pin;
+let A12: Pin;
+let A13: Pin;
+let A14: Pin;
+let A15: Pin;
+
+let B0: Pin;
+let B1: Pin;
+let B2: Pin;
+let B3: Pin;
+let B4: Pin;
+let B5: Pin;
+let B6: Pin;
+let B7: Pin;
+let B8: Pin;
+let B9: Pin;
+let B10: Pin;
+let B12: Pin;
+let B13: Pin;
+let B14: Pin;
+let B15: Pin;
+
+let C13: Pin;
+let C14: Pin;
+let C15: Pin;
+
+let H0: Pin;
+let H1: Pin;
