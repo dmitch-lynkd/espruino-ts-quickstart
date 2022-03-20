@@ -55,10 +55,6 @@ function prepare_for_espruino(cb) {
   });
 }
 
-const condition = (file) => {
-  file;
-};
-
 function compile_ts() {
   const tsResult = tsProject.src().pipe(tsProject());
   // return tsResult.js.pipe(gulp.dest(distDir));
