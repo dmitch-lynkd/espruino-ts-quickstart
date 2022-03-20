@@ -18,6 +18,8 @@
     "@types/espruino": "^1.94",
     "espruino": "^0.1",
     "gulp": "^4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
     "gulp-typescript": "^5.0",
     "js-yaml": "^4.0",
     "lodash": "^4.17",
